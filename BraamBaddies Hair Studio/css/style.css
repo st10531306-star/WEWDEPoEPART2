@@ -1,0 +1,224 @@
+
+:root {
+  --primary-color: #8b263e;       /* Deep Berry/Wine */
+  --secondary-color: #fce4ec;     /* Soft Pink Accent */
+  --accent-color: #d81b60;        /* Vivid Pink */
+  --text-dark: #2c2c2c;           /* Charcoal Text */
+  --bg-light: #fdfbfb;            /* Soft Background */
+  --card-bg: #ffffff;             /* White Card Background */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+   
+h1, h2, h3, h4, .logo {
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary-color);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+
+header {
+  background-color: #8b263e; 
+  padding: 1.2rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+nav, .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+nav a, .navbar a {
+  color: #df1e55 !important; 
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+
+nav a:hover, .navbar a:hover {
+  background-color: #050404 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.services-container, 
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-card, 
+.content-box, 
+section {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid rgba(216, 27, 96, 0.12);
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(139, 38, 62, 0.12);
+}
+
+.btn, button, input[type="submit"] {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(216, 27, 96, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn:hover, button:hover, input[type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(216, 27, 96, 0.35);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Tablet Breakpoint (768px and below) */
+@media screen and (max-width: 768px) {
+  .services-container, 
+  .grid-container {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .service-card, 
+  .content-box, 
+  section {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+}
+
+/* Mobile Breakpoint (480px and below) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav, .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a, .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  .btn, button, input[type="submit"] {
+    width: 100%;
+    text-align: center;
+  }
+}
