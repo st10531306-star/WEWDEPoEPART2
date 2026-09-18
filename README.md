@@ -10,4 +10,4 @@ This repository contains the WEDE Part 2 submission for **BraamBaddies Hair Stud
 ## Main Project Folder & Documentation
 for full details on the website structure, CSS media query implementations, responsive previews, and references please navigate to the main project folder below:
 
-**[View Full BraamBaddies Hair Studio Project & Detailed Documentation](./BraamBaddies%20Hair%Studio)**
+**[View Full BraamBaddies Hair Studio Project & Detailed Documentation](./BraamBaddies%20Hair%Studio/README.md)**
